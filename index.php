@@ -1,9 +1,10 @@
 <?php
+require 'vendor/autoload.php';
 require_once 'config/database.php';
-
 
 $posts = $pdo->query("SELECT * FROM posts WHERE status='published' ORDER BY created_at DESC")->fetchAll();
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -95,5 +96,6 @@ $posts = $pdo->query("SELECT * FROM posts WHERE status='published' ORDER BY crea
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 
 </html>
