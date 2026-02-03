@@ -1,5 +1,10 @@
 {
     "require": {
-        "mongodb/mongodb": "^1.15"
+        "mongodb/mongodb": "^1.16"
+    },
+    "config": {
+        "allow-plugins": {
+            "kylekatarnls/update-helper": true
+        }
     }
 }
